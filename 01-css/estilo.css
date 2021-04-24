@@ -1,0 +1,10 @@
+/* estructura estilos css */
+
+/* selector {
+    propiedad: valor;
+} */
+
+/* Selector Universal, selecciona todos los elementos */
+* {
+    color: #000000;
+}
