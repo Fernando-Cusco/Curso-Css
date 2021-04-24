@@ -8,3 +8,43 @@
 * {
     color: #000000;
 }
+
+/* Selector de tipo, solo selecciona etiquetas por el nombre */
+
+h2 {
+    color: #cfcfcf;
+}
+
+button {
+    padding: 10px;    
+}
+
+/* Selector de clase, se selecciona por su clase */
+.clase-h4 {
+    color: #c59cc5;
+}
+
+/* Selector por Id, se selecciona por el id */
+#id-element {
+    color: rgb(165, 33, 61);
+}
+
+/* Selector por atributo */
+[attr="uno"] {
+    color: rgb(19, 85, 207);
+}
+
+/* Selector por descendiente, seleeciona los elementos b que esten dentro de un h3 */
+h3 b {
+    color: #d42828;
+}
+
+h3 b span {
+    color: #99d806;
+}
+
+/* Selector por una pseudo clase */
+.pseudo:hover {
+    font-size: 20px;
+    color: #990303;
+}

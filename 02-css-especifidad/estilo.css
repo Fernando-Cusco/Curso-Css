@@ -1,0 +1,40 @@
+/* estructura estilos css */
+
+/* selector {
+    propiedad: valor;
+} */
+
+/* Selector Universal, selecciona todos los elementos */
+* {
+    color: #000000;
+}
+
+/* El ultimpo estilo sera aplicado, problema de especificidad */
+p {
+    color: #d1f507;
+}
+p {
+    color: #0e71f3;
+}
+p {
+    color: #ec0c0c;
+}
+
+/* Lo toma por jerarquia, para este caso, toma por el atributo*/
+[color="color"] {
+    color: #d1f507;
+}
+.red {
+    color: blue;
+}
+
+h1 {
+    color: red;
+}
+
+/* usando el !important,  nivel mas alto */
+#h2-id {
+   color: red; 
+}
+
+
