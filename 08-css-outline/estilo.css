@@ -1,0 +1,24 @@
+/* estructura estilos css */
+
+/* selector {
+    propiedad: valor;
+} */
+
+/* Selector Universal, selecciona todos los elementos */
+* {
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+div {
+    width: 200px;
+    height: 200px;   
+    background: rgb(21, 211, 97);
+    display: inline-block;
+}
+
+.caja-1, .caja-4 {
+    outline: 2px solid black;
+    position: relative;
+}

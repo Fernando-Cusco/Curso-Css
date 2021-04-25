@@ -1,0 +1,110 @@
+/* estructura estilos css */
+
+/* selector {
+    propiedad: valor;
+} */
+
+/* Selector Universal, selecciona todos los elementos */
+* {
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+div {
+    width: 200px;
+    height: 200px;   
+    display: block;
+}
+
+.caja-1 {
+    background: rgb(233, 254, 5);
+}
+/* position relative, genera top(*), left(*), right, bottom y z-index */
+/* se conserva el espacio */
+.caja-2 {
+    background: rgb(8, 75, 189);
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+.caja-3 {
+    background: rgb(235, 63, 10);
+    position: relative;
+    z-index: 1; /*z-index solo funciona cuando la caja esta posicionada, el valor mayor se posiona por arriba*/
+}
+.caja-4 {
+    background: rgb(21, 211, 97);
+}
+/* fix z-index entre hijo y padre, z-index no debe estar definido en el padre */
+.padre {
+    width: 300px;
+    height: 150px;
+    background: rgb(70, 68, 68);
+    margin: 40px;
+    position: relative;
+    
+}
+
+.hijo {
+    width: 80px;
+    height: 50px;
+    background: rgb(44, 221, 153);
+    position: relative;
+    top: -20px;
+    left: -10px;
+    z-index: -1;
+}
+
+/* Position absolute */
+/* El espacio no se reserva */
+div {
+    position: absolute;
+}
+div div {
+    height: 75px;
+    width: 75px;
+    background: red;
+}
+
+.contenedor {
+    position: relative;
+    margin: 50px auto;
+    height: 500px;
+    width: 500px;
+    border: 4px solid black;
+}
+
+.box1 {
+    top: 0px;
+    left: 0px; 
+}
+.box2 {
+   top: 0px;
+   right: 0px;
+}
+.box3 {
+    bottom: 0px;
+    left: 0px;
+}
+.box4 {
+    bottom: 0px;
+    right: 0px;
+}
+
+.box5 {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+/* position fixed */
+
+.texto{
+    background: rgb(186, 170, 170);
+    position: fixed;
+    opacity: 0.4;
+}
