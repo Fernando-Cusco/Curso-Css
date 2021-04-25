@@ -1,0 +1,25 @@
+/* estructura estilos css */
+
+/* selector {
+    propiedad: valor;
+} */
+
+/* Selector Universal, selecciona todos los elementos */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Funciona para cualquier propiedad que tenga unidades de medida */
+.contact-form {
+    font-size: 20px;
+    background-color: #000000;
+    width: 50vw;
+    height: 50vh;
+}
+
+/* Medidas relativas 1em = 20px, hereda */
+.contact-form__h2 {
+    font-size: 5em;   
+}
+
